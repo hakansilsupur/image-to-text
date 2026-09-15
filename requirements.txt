@@ -1,0 +1,10 @@
+# Runtime requirements for Image to Text.
+Pillow>=9.0
+
+# The recognizer built into Windows 10/11. Windows-only; the app falls back to
+# Tesseract (or simply reports it) when this is not installed.
+winsdk>=1.0.0b10; sys_platform == "win32"
+
+# Optional extras - uncomment if you want them:
+# pytesseract>=0.3.10    # second OCR engine (needs Tesseract installed too)
+# tkinterdnd2>=0.3.0     # drag and drop files onto the window
